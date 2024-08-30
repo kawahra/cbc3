@@ -4,45 +4,17 @@ body {
   color: #060606;
   font-size: 16px;
   font-family: sans-serif;
+  letter-spacing: 0.06em;
 }
 a {
   text-decoration: none;
   color: #060606;
 }
 
-body,
-header,
-footer,
-main,
-section,
-div,
-p,
-li,
-dt,
-dd,
-a {
-  margin: 10px;
-  padding: 10px;
-}
-header,
-footer,
-main {
-  border: 2px solid #f00;
-}
-section {
-  border: 2px solid #f00;
-}
-div,
-p {
-  border: 2px solid #00f;
-}
-li,
-dt,
-dd,
-a {
-  border: 1px dotted #0f0;
-}
 .header {
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 .header__wrap {
   width: 85%;
@@ -55,11 +27,21 @@ a {
   width: 54px;
   height: 76px;
 }
+.header__logo a {
+  display: block;
+}
 .header__menu {
+}
+.header__menu ul {
   display: flex;
 }
-.header__menu li {
-  width: 100px;
+.header__menu ul li {
+  width: 80px;
+}
+.header__menu ul li a {
+  display: block;
+  width: 100%;
+  text-align: center;
 }
 
 .main {
